@@ -49,7 +49,7 @@ class FollowingFragment : Fragment() {
     private fun getDataGit(id: String) {
         progressBarFollowing.visibility = View.VISIBLE
         val client = AsyncHttpClient()
-        client.addHeader("Authorization", "token 6fe9dff2e5e43d25eb3abe9ff508a750b972f725")
+        client.addHeader("Authorization", "token <Change with your token>")
         client.addHeader("User-Agent", "request")
         val url = "https://api.github.com/users/$id/following"
         client.get(url, object : AsyncHttpResponseHandler() {
@@ -97,7 +97,7 @@ class FollowingFragment : Fragment() {
     private fun getDataGitDetail(id: String) {
         progressBarFollowing.visibility = View.VISIBLE
         val client = AsyncHttpClient()
-        client.addHeader("Authorization", "token 6fe9dff2e5e43d25eb3abe9ff508a750b972f725")
+        client.addHeader("Authorization", "token <Change with your token>")
         client.addHeader("User-Agent", "request")
         val url = "https://api.github.com/users/$id"
         client.get(url, object : AsyncHttpResponseHandler() {
